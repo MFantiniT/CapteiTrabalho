@@ -1,0 +1,31 @@
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title>CAPTEI - AGUARDE</title>
+      <link rel="stylesheet" href="reset.css">
+      <link rel="stylesheet" href="style.css">
+    </head>
+  <body>
+  <div class="vamola">
+      <h1>Você sera redirecionado em:</h1 >
+  </div>  
+        <h1 id="counterarea"></h1>
+  
+<script>
+
+  var counter;
+
+  counter = 10;
+  setInterval(function () {
+    counter = counter - 1;
+    document.getElementById("counterarea").innerHTML = counter;
+    if(counter === 0){
+      window.location.href = 'https://www.google.com';
+    }
+  }, 1000);
+
+  </script>
+  <p><img src="OIP.jpg" class="imgcaptei"></p>
+
+</body>
+</html>
